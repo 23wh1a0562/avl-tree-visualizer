@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AVL Tree Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>AVL Tree Visualizer</h1>
+<p class="subtitle">Self-balancing Binary Search Tree</p>
+
+<div class="container">
+
+    <!-- Controls -->
+    <div class="box">
+        <input type="number" id="nodeValue" placeholder="Enter value">
+        <button onclick="insertNode()">Insert</button>
+        <button onclick="deleteNode()">Delete</button>
+        <button onclick="resetTree()">Reset Tree</button>
+        <p id="rotationInfo"></p>
+    </div>
+
+    <!-- Tree Visualization -->
+    <div class="box tree-area">
+        <h3>Tree Visualization</h3>
+        <div id="treeCanvas">
+            <svg id="treeLines"></svg>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
